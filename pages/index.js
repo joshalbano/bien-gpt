@@ -51,7 +51,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>OpenAI Quickstart</title>
+        <title>Bien-gpt</title>
         <link rel="icon" href="/dog.png" />
       </Head>
 
@@ -62,11 +62,11 @@ export default function Home() {
           <input
             type="text"
             name="animal"
-            placeholder="Enter an animal"
+            placeholder="Enter"
             value={animalInput}
             onChange={(e) => setAnimalInput(e.target.value)}
           />
-          <input type="submit" value="Generate names" />
+          <input type="submit" value="Submit" />
         </form>
         {loading === true ? 
    <div className={styles.loading}><img className={styles.loading} src="/yes.gif"/></div> : 
